@@ -138,4 +138,19 @@ private:
         }
         return -1;
     }
+int pesominore(const T& nodo) const{
+    int indice = trovaindice(nodo);
+    if(indice < 0){
+        std :: cout << "L'indice non esiste" << std :: endl;
+    }
+    int min = inf;
+    for(int i = 0; i < numeroNodi; i++){
+        if(esistenodo(i) && matriceAdiacenza[indice][i] != inf){
+            if(matriceadiAcenza[indice][i] < min){
+                min = matriceAdiacenza[indice][i];
+            }
+        }
+    }
+    return min;
+ }
 };
