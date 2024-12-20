@@ -142,6 +142,7 @@ int pesominore(const T& nodo) const{
     int indice = trovaindice(nodo);
     if(indice < 0){
         std :: cout << "L'indice non esiste" << std :: endl;
+        return -1;
     }
     int min = inf;
     for(int i = 0; i < numeroNodi; i++){
