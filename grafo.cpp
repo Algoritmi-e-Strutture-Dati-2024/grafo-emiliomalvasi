@@ -12,6 +12,8 @@ int main(){
   GrafoM.aggiungiarco('Napoli','Milano' 20);
   GrafoM.aggiungiarco('Venezia','Roma' 30);
   GrafoM.aggiungiarco('Napoli','Bari' 40);
+  GrafoM.aggiungiarco('Bari','Venezia' 50);
+  
   
   GrafoM.stampa();
   
@@ -35,4 +37,5 @@ int main(){
     std :: cout << "Non ci sono archi con un peso da 10" << std :: endl;
   }
 }
+
 
